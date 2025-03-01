@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Space Ship</title>
+        <meta name="description" content="Lern HTML - Space Ship">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="ship">
+            <div class="body">
+                <div class="eyes">
+                <span class="eye_1"></span>
+                <span class="eye_2"></span>
+            </div>
+            </div>
+            <svg class="vawes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+                <defs>
+                    <circle id="wave" cx="25" cy="25" r="24"/>
+                </defs>
+                <use xlink:href="#wave" class="wave_1"/>
+                <use xlink:href="#wave" class="wave_2"/>
+            </svg>
+            <div class="foot_1"></div>
+            <div class="foot_2"></div>
+            <div class="foot_3"></div>
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
