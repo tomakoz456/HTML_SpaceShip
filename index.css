@@ -130,3 +130,8 @@ body {
     50% {transform: scaleY(0);}
     60% {transform: scaleY(1);}
 }
+
+#shape {
+    /* background: #163040 url('C:\\Users\\kogut\\Documents\\HTML\\SpaceShip\\hat-640.webp') no-repeat;
+    background-attachment: fixed; */
+}
