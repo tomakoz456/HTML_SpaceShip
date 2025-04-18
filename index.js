@@ -1,4 +1,5 @@
 // convert angle from deg to radial using rule rad = angle * PI / 180
+
 function deg2rad(angle) {
     return ((angle * Math.PI) / 180);
 }
@@ -6,11 +7,15 @@ function deg2rad(angle) {
 function a(radius) {
     return radius;
 }
-function h(a) {
-    return ((a * Math.sqrt(3)) / 2);
+function h(radius) {
+    return ((radius * Math.sqrt(3)) / 2);
 }
 function a_2(radius) {
     return (radius / 2);
+}
+
+function area(radius) {
+    return (6 * a(radius) * h(radius) / 2);
 }
 
 var c = document.getElementById("shape");
@@ -100,3 +105,15 @@ cords2(30, A2);
 cords2(120, H);
 cords2(180, H);
 ctx2.rotate(Math.PI / 2);
+
+var ship = document.body.getElementsByClassName('ship')[0];
+// ship = ship[0];
+coordinate.forEach((item, i) => {
+  console.log
+  console.log(item);
+  setTimeout(function () {
+    ship.style.left = item['x'] + "px";
+    ship.style.top = item['y'] + "px";
+    console.log("left: " + -item['x'] + "px");
+  }, i * 1000);
+});
